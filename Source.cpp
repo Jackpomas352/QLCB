@@ -372,7 +372,6 @@ void GhiFileAdmin(const vector<Admin>& dsAdmin, const string& adminFile) {
         return;
     }
 
-    file << dsAdmin.size() << endl;
     for (const auto& admin : dsAdmin) {
         admin.WriteToStream(file);
     }
